@@ -1,136 +1,93 @@
-
-
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
-
+/* General Styles */
 * {
-
     margin: 0;
     padding: 0;
-
 }
 
 body {
-
     font-family: "Poppins", sans-serif;
-
- }
-
+}
 
 html {
-
     scroll-behavior: smooth;
-
 }
 
 p {
-
     color: rgb(11, 127, 251);
-
 }
-
-/* Transition */
 
 a, .btn {
-
     transition: all 1s ease;
-
-}
-
-/* Desktop NAV*/
-
-nav, .nav-links {
-
-    display: flex;
-
-}
-
-nav {
-
-    justify-content: space-around;
-    align-items: center;
-    height: 15vh;
-
-}
-
-.nav-links {
-
-    gap: 2rem;
-    list-style: none;
-    font-size: 1.5rem;
-
-}
-
-a {
-
-    color: rgb(11, 127, 251); 
-    text-decoration: none;
-    text-decoration-color: white;
-
 }
 
 a:hover {
-
     color: black;
     text-decoration: underline;
     text-underline-offset: 1rem;
     text-decoration-color: rgb(11, 127, 251);
-    
-
 }
 
 .logo {
-
     font-size: 2.5rem;
-
 }
 
-
 .logo:hover {
-
     cursor: default;
+}
 
+/* Desktop NAV*/
+nav, .nav-links {
+    display: flex;
+}
+
+nav {
+    justify-content: space-around;
+    align-items: center;
+    height: 15vh;
+}
+
+.nav-links {
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+a {
+    color: rgb(11, 127, 251); 
+    text-decoration: none;
+    text-decoration-color: white;
 }
 
 /* Hamburger Menu */
-
 #hamburger-nav {
-
     display: none;
-
 }
 
 .hamburger-menu {
-
     position: relative;
     display: inline-block;
     z-index: 100;
-
 }
 
 .hamburger-icon {
-
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 24px;
     width: 30px;
     cursor: pointer;
-
 }
 
 .hamburger-icon span {
-
     width: 100%;
     height: 3px;
     background-color: rgb(11, 127, 251);
     transition: all 0.625s ease-in-out;
-
 }
 
 .menu-links {
-
     position: absolute;
     top: 100%;
     right: 0%;
@@ -139,11 +96,9 @@ a:hover {
     max-height: 0;
     overflow: hidden;
     transition: all 0.625s ease-in-out;
-
 }
 
 .menu-links a {
-
     display: block;
     padding: 10px;
     text-align: center;
@@ -151,164 +106,117 @@ a:hover {
     color: black;
     text-decoration: none;
     transition: all 0.625s ease-in-out;
-
 }
 
 .menu-links li {
-
     list-style: none;
-
-
 }
 
 .menu-links.open {
-
     max-height: 300px;
-
-
 }
 
 .hamburger-icon.open span:first-child {
-
     transform: rotate(45deg) translate(10px, 5px);
-
 }
+
 .hamburger-icon.open span:nth-child(2) {
-
     opacity: 0;
-
 }
+
 .hamburger-icon.open span:last-child {
-
     transform: rotate(-45deg) translate(10px, -5px);
-
 }
 
 .hamburger-icon span:first-child {
-
     transform: none;
-
 }
-.hamburger-icon span:first-child {
 
+.hamburger-icon span:first-child {
     opacity: 1;
-
 }
+
 .hamburger-icon span:first-child {
-
     transform: none;
-
 }
-
 
 /* SECTIONS */
-
 section {
-
     padding-top: 4vh;
     height: 96vh;
     margin: 0 10rem;
     box-sizing: border-box;
     min-height: fit-content;
-
 }
 
 .section-container {
-
     display: flex;
 
 }
 
 /* PROFILE SECTION */
-
 #profile {
-
     display: flex;
     justify-content: center;
     gap: 5rem;
     height: 80vh;
-
 }
 
 .section__pic-container {
-
     display: flex;
     height: 200px;
     width: 200px;
     margin: auto 0;
-    
 }
+
 /*Rounded profile pic*/
 img {border-radius: 50%;}
 
 .section__text {
-
     align-self: center;
     text-align: center;
-
-
 }
 
 .section__text p {
-
     font-weight: 600;
-
-
 }
-
 
 .section__text__p1 {
-
     text-align: center;
-
 }
-.section__text__p2 {
 
+.section__text__p2 {
     font-size: 1.75rem;
     margin-bottom: 1rem;
-
 }
 
 .title {
-
     font-size: 3rem;
     text-align: center;
-
 }
 
-
 #socials-container {
-
     display: flex;
     justify-content: center;
     margin-top: 1rem;
     gap: 1rem;
-
 }
 
-
 /* ICONS */
-
 .icon {
-
     cursor: pointer;
     height: 2.25rem;
-
 }
 
 /* BUTTONS */
-
 .btn-container {
-
     display: flex;
     justify-content: center;
     gap: 1rem;
-
-
+    padding: 1rem;
 }
 
 .btn {
-
     font-weight: 600;
     transition: all 0.625s ease;
     padding: 1rem;
@@ -316,49 +224,38 @@ img {border-radius: 50%;}
     border-radius: 2rem;
 }
 
-
-
-
 .btn-color-1:hover, 
 .btn-color-2:hover {
-
     cursor: pointer;
-
 }
 
 .btn-color-1:hover, 
 .btn-color-2:hover {
-
     background: rgb(11, 127, 251);
     color: black;
-
 }
 
-
-
 .btn-color-1, .btn-color-2 {
-
     background: none;
-
 }
 
 .btn-color-1:hover, .btn-color-2:hover {
-
     border: rgb(250, 250, 250) 0.1rem solid;
-
 }
 
 .btn-container {
-
     gap: 1rem;
-
 }
 
 /* ABOUT SECTION */
-
 #about {position: relative;}
 
-.about-containers {gap: 2rem; margin-top: 2rem; margin-bottom: 2rem;}
+.about-containers {display: flex;
+    flex-direction: row; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    gap: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;}
 
 .about-details-container {justify-content: center; flex-direction: column;}
 
@@ -370,27 +267,34 @@ img {border-radius: 50%;}
 
 .arrow {position: absolute; right: -5rem; bottom: 2.5rem;}
 
-.details-container {padding: 1.5rem; flex: 1;  background: white; border-radius: 2rem; border: rgb(53, 53, 53) 0.1rem solid; border-color: black; text-align: center;}
+.details-container {padding: 1.5rem;
+    flex: 1;
+    background: white;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: black;
+    text-align: center;
+    width: 300px; /* Adjust the width as needed */}
 
-.section-container {gap: 4rem; height: 80%;}
+.section-container {display: flex;
+    justify-content: center; /* Center items horizontally */
+    gap: 4rem;
+    height: 80%;
+    align-items: center;}
 
 .section__pic-container {height: 400px; width: 400px; margin: auto 0}
 
 /* EXPERIENCE SECTION */
-
 #experience {position: relative;}
 
 .experience-sub-title {
-
     color: rgb(11, 127, 251); 
     font-weight: 600; 
     font-size: 1.75rem; 
     margin-bottom: 2rem;
-
 }
 
 .experience-details-container {
-    
     display: flex; 
     justify-content: center; 
     flex-direction: column;}
@@ -410,57 +314,42 @@ article {display: flex;
 
 article .icon {cursor: default;}
 
-
-
 /* PROJECTS SECTION*/
-
 #projects {position:relative;
 }
 
 .color-container {
-
     border-color: black;
     background: transparent;
-
 }
 
 .project-img {
-
     border-radius: 2rem;
     width: 90%;
     height: 90%;
-
 }
 
 .project-title {
-
     margin: 1rem;
     color: black;
-
 }
 
 .project-btn {
-
     color: black;
     border-color: black;
-
 }
 
 /* CONTACT */
-
 #contact {
-
     position: relative;
     display: flex;
     justify-content: center;
     flex-direction: column;
     height: 70vh;
-    
-
+   
 }
 
 .contact-info-upper-container {
-
     display: flex;
     justify-content: center;
     border-radius: 2rem;
@@ -469,47 +358,105 @@ article .icon {cursor: default;}
     background: rgb(250, 250, 250);
     margin: 2rem auto;
     padding: 0.5rem;
-
 }
 
 .contact-info-container {
-
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
     margin: 1rem;
-
 }
 
 .contact-info-container p {
-
     font-size: larger;
-
 }
 
 .contact-icon {
-
     cursor: default;
-
 }
 
 .email-icon {
     height: 2.5rem;
 }
 
-
 /* FOOTER SECTION */
-
 footer {
-
     height: 26vh;
     margin: 0 1rem;
-
 }
 
 footer p {
-
     text-align: center;
+}
 
+/* Media Queries */
+
+/* For devices with a maximum width of 1920px (larger desktop screens) */
+@media only screen and (max-width: 2560px) {
+    #contact { margin-top: 110rem; /* Add margin to push the contact section down */}
+}
+
+/* For devices with a maximum width of 1440px (typical desktop screens) */
+@media only screen and (max-width: 1440px) {
+    #contact { margin-top: 45rem; /* Add margin to push the contact section down */}
+}
+
+/* For devices with a maximum width of 1366px (smaller desktop screens) */
+@media only screen and (max-width: 1366px) {
+    /* Add your styles for smaller desktop screens here */
+}
+
+/* For devices with a maximum width of 1280px (laptops and larger tablets) */
+@media only screen and (max-width: 1280px) {
+    /* Add your styles for laptops and larger tablets here */
+}
+
+/* For devices with a maximum width of 1024px (smaller tablets and landscape mode) */
+@media only screen and (max-width: 1024px) {
+
+    
+}
+
+/* For devices with a maximum width of 768px (tablets and larger smartphones) */
+@media only screen and (max-width: 768px) {
+#contact {margin: 0}
+    
+}
+
+/* For devices with a maximum width of 576px (smaller smartphones) */
+@media only screen and (max-width: 576px) {
+
+    
+}
+
+/* For devices with a maximum width of 480px (small smartphones) */
+@media only screen and (max-width: 480px) {
+
+    
+}
+
+/* For devices with a maximum width of 360px (very small smartphones) */
+@media only screen and (max-width: 360px) {
+    /* Add your styles for very small smartphones here */
+}
+
+/* For devices with a maximum width of 320px (smallest smartphones and some feature phones) */
+@media only screen and (max-width: 320px) {
+    /* Add your styles for smallest smartphones and some feature phones here */
+}
+
+/* For devices with a maximum width of 280px (very small smartphones and feature phones) */
+@media only screen and (max-width: 280px) {
+    /* Add your styles for very small smartphones and feature phones here */
+}
+
+/* For devices with a maximum width of 240px (very small feature phones) */
+@media only screen and (max-width: 240px) {
+    /* Add your styles for very small feature phones here */
+}
+
+/* For devices with a maximum width of 200px (smallest feature phones) */
+@media only screen and (max-width: 200px) {
+    /* Add your styles for smallest feature phones here */
 }
