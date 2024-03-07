@@ -6,6 +6,7 @@
     <title>Justin Silbiger</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="mediaqueries.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <nav id="desktop-nav">
@@ -46,14 +47,14 @@
         <div class="section__text">
             <p class="section__text__p1">Hello, I'm</p>
             <h1 class="title">Justin Silbiger</h1>
-            <p class="section__text__p2">Jr. Web Developer</p>
+            <p class="section__text__p2">Software Engineering Student</p>
             <div class="btn-container">
             
                 <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
             </div>
             <div id="socials-container">
-                <img src="./assets/linkedin.png" alt="My Linkedin Profile" class="icon" onclick="location.href='https://www.linkedin.com/in/justinzs/'">
-                <img src="./assets/github.png" alt="My Github Profile" class="icon" onclick="location.href='https://github.com/shabbat-shalom'">
+                <i class='bx bxl-linkedin-square bx-lg bx-tada-hover' alt="My Linkedin Profile" class="icon" onclick="location.href='https://www.linkedin.com/in/justinzs/'"></i>
+                <i class='bx bxl-github bx-lg bx-tada-hover' alt="My Github Profile" class="icon" onclick="location.href='https://github.com/shabbat-shalom'"></i>
             </div>
         </div>
     </section>
@@ -72,18 +73,22 @@
                 <div class="details-container">
                     <img src="./assets/experience.png" alt="Experience icon" class="icon">
                     <h3>Experience</h3>
-                    <p>JTimes Web Developer</p>
+                    <p>Web Development at <a href="https://shabbat-shalom.github.io/"><br>JTimes.org</a></p>
                 </div>
                 <div class="details-container">
                     <img src="./assets/education.png" alt="Education icon" class="icon">
                     <h3>Education</h3>
                     <p>B.Sc. Public Health Science</p>
+                    <p>CUNY-QCC SW Engineering Badge Candidate</p>
                 </div>
             </div>
           
         </div>
         <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'">
     </section>
+
+
+
     <section id="experience">
         <p class="section__text__p1">Explore My</p>
         <h1 class="title">Experience</h1> <br>
@@ -112,41 +117,45 @@
                             <h3>Javascript</h3>
                             <p>Intermediate</p>
                         </div>
-                    </article>
+                    </article
                 </div>
 
             </div>
-            <!--<div class="details-container">
-                <h2 class="experience-sub-title">Backend Development</h2>
-                <div class="article-container">
-                    <article>
-                        <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-                        <div>
-                            <h3>HTML</h3>
-                            <p>Experienced</p>
-                        </div>
-                    </article>
-                    <article>
-                        <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-                        <div>
-                            <h3>CSS</h3>
-                            <p>Experienced</p>
-                        </div>
-                    </article>
-                    <article>
-                        <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-                        <div>
-                            <h3>Javascript</h3>
-                            <p>Intermediate</p>
-                        </div>
-                    </article>
-                </div>
+        
+        </div>
+        <div class="details-container">
+            <h2 class="experience-sub-title">Backend Development</h2>
+            <div class="article-container">
+                <article>
+                    <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                    <div>
+                        <h3>PostgreSQL</h3>
+                        <p>Beginner</p>
+                    </div>
+                </article>
+                <article>
+                    <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                    <div>
+                        <h3>Git</h3>
+                        <p>Intermediate</p>
+                    </div>
+                </article>
+                <article>
+                    <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                    <div>
+                        <h3>Python</h3>
+                        <p>Beginner</p>
+                    </div>
+                </article
+            </div>
 
-            </div>-->
         </div>
         
         <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'">
     </section>
+
+
+
 
     <section id="projects">
         <p class="section__text__p1">Browse My Recent</p>
@@ -162,7 +171,7 @@
                     <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/shabbat-shalom/shabbat-shalom.github.io'">
                         Github
                     </button>
-                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://shabbat-shalom.github.io/'">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/JustinSilbiger'">
                         Live Demo
                     </button>
                 </div>
@@ -199,6 +208,9 @@
         <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'">
     </section>
 
+
+
+
     <section id="contact">
         <p class="section__text__p1">Get in touch</p>
         <h1 class="title">Contact Me</h1>
@@ -215,6 +227,9 @@
         </div>
     </section>
 
+
+
+
     <footer>
         <nav>
             <div class="nav-links-container">
@@ -226,7 +241,7 @@
                 </ul>
             </div>
         </nav>
-        <p>Copyright &#169; 2024 Justin Silbiger. All Rights Reserved.</p>
+        <p>Copyright &#169; 2024 Justin Silbiger. All Rights Reserved.</p> 
 
     </footer>
 

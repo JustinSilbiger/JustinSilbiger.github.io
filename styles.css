@@ -172,6 +172,36 @@ section {
 /*Rounded profile pic*/
 img {border-radius: 50%;}
 
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.photo-container img {
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+    transition: opacity 1s ease;
+}
+
+.photo-container.loaded img {
+    opacity: 1;
+}
+
+.photo-container img {
+    opacity: 0; /* Initially set opacity to 0 */
+    transition: opacity 1s ease; /* Add transition effect */
+}
+
+.photo-container.loaded img {
+    opacity: 1; /* Once the image is loaded, set opacity to 1 */
+}
+
 .section__text {
     align-self: center;
     text-align: center;
@@ -203,7 +233,7 @@ img {border-radius: 50%;}
 }
 
 /* ICONS */
-.icon {
+.icon, i {
     cursor: pointer;
     height: 2.25rem;
 }
@@ -274,7 +304,7 @@ img {border-radius: 50%;}
     border: rgb(53, 53, 53) 0.1rem solid;
     border-color: black;
     text-align: center;
-    width: 300px; /* Adjust the width as needed */}
+    width: 365px; /* Adjust the width as needed */}
 
 .section-container {display: flex;
     justify-content: center; /* Center items horizontally */
