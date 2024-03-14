@@ -283,7 +283,7 @@ img {border-radius: 50%;}
 .about-containers {display: flex;
     flex-direction: row; /* Stack items vertically */
     align-items: center; /* Center items horizontally */
-    gap: 2rem;
+    gap: 1rem;
     margin-top: 2rem;
     margin-bottom: 2rem;}
 
@@ -444,7 +444,7 @@ footer p {
 
 /* For devices with a maximum width of 1024px (smaller tablets and landscape mode) */
 @media only screen and (max-width: 1024px) {
-
+    #contact { margin-top: 1rem; /* Add margin to push the contact section down */}
     
 }
 
