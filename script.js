@@ -19,23 +19,25 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 document.addEventListener('DOMContentLoaded', function() {
-  const sections = document.querySelectorAll('.subtext');
+    const sections = document.querySelectorAll('.subtext');
 
-  const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-          if (entry.isIntersecting) {
-              entry.target.classList.add('subanimated');
-              observer.unobserve(entry.target); // trigger repitition stop
-          }
-      });
-  }, {
-      threshold: 0.5 // animation trigger threshold
-  });
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('subanimated');
+                observer.unobserve(entry.target); // trigger repetition stop
+            }
+        });
+    }, {
+        threshold: 0.3, // Adjust threshold for smoother behavior
+        rootMargin: '0px' // Optionally adjust root margin if needed
+    });
 
-  sections.forEach(section => {
-      observer.observe(section);
-  });
+    sections.forEach(section => {
+        observer.observe(section);
+    });
 });
+
 
 
 
