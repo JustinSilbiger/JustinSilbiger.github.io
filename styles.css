@@ -16,9 +16,8 @@ body {
 
 }
 
-body p {opacity: 0;} 
 
-body a {opacity: 0;}
+body a, body p, body box-icon {opacity: 0;}
 
 /* ********************************* Navigation ********************************* */
 

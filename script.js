@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }, {
-        threshold: 0.3, // Adjust threshold for smoother behavior
+        threshold: 1, // Adjust threshold for smoother behavior
         rootMargin: '0px' // Optionally adjust root margin if needed
     });
 
