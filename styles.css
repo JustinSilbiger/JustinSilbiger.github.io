@@ -203,6 +203,9 @@ font-size: 2rem;
     padding: 2rem 5% 2rem 5%;
     
 }
+/* FIX THIS header */
+#project a {color: #fff; text-decoration: underline;}
+/* FIX THIS header */
 
 #projects p {
     padding: 1rem;
