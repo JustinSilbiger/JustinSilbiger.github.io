@@ -17,7 +17,7 @@ body {
 }
 
 
-body a, body p, body box-icon {opacity: 0;}
+body a, body p, body box-icon, label, input, textarea {opacity: 0;}
 
 /* ********************************* Navigation ********************************* */
 
