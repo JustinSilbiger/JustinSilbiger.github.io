@@ -202,9 +202,8 @@ font-size: 2rem;
     padding: 2rem 5% 2rem 5%;
     
 }
-/* FIX THIS header */
-#project a {color: #fff; text-decoration: underline;}
-/* FIX THIS header */
+
+
 
 #projects p {
     padding: 1rem;
@@ -245,14 +244,15 @@ font-size: 2rem;
 
 
 .project a {
-    text-decoration: none;
+    text-decoration: underline;
     color: #fff;
 }
-
 .project a:hover {
-    text-decoration: underline;
-
+    text-decoration: none;
+    color: #00fbff;
 }
+
+
 
 .project box-icon {
     display: block;
@@ -413,7 +413,7 @@ footer {
 .subtext {text-align: center;}
 
 .purple {
-    background: linear-gradient(10deg, #7b00ff, #ffffff);
+    background: linear-gradient(10deg, #7b00ff, #6e438d);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -429,7 +429,7 @@ footer {
     opacity: 0;
 }
 .yellow {
-    background: linear-gradient(10deg, #ffee00, #000000);
+    background: linear-gradient(10deg, #ffee00, #b6c767);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
