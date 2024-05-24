@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.herobox {
+    position: relative;
+}
+
+.herobox>img {
+    width: 100%;
+    height: 100vh;
+}
+
+.herobox>div {
+    width: 30%;
+    height: 10%;
+    position: absolute;
+    right: -35%;
+    top: 40%;
+    transform: rotate(10deg);
+    animation: flybird 7.5s infinite;
+}
+
+@keyframes flybird {
+    0% {right: -25%;}
+    100% {right: 125%; top: 5%;}
+}
