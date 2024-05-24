@@ -22,7 +22,77 @@
     animation: flybird 7.5s infinite;
 }
 
+.herobox>a {
+    position: absolute; 
+    top: 10%; 
+    left: 10%; 
+    z-index: 1; 
+    position: absolute; 
+    bottom: 5%; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    z-index: 1; 
+}
+
+
+
+
 @keyframes flybird {
     0% {right: -25%;}
     100% {right: 125%; top: 5%;}
+}
+
+.mdl {
+    display: none; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 9999; 
+}
+
+.mdl>div {
+    background-color: white;
+    width: 20rem;
+    height: auto;
+    margin: 25% auto; 
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+}
+
+.mdl h1 {
+    font-size: 32px;
+    margin-bottom: 1rem;
+}
+
+.mdl p {
+    font-size: 18px;
+}
+
+.mdl a {
+    position: relative;
+    top: 0;
+    left: 18rem;
+    font-size: 24px;
+    color: #000000;
+    text-decoration: none;
+}
+
+/* Style the button */
+button {
+    padding: 1rem;
+    font-size: 18px;
+    background-color: #000000; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+button:hover {
+    background-color: #007109; 
 }

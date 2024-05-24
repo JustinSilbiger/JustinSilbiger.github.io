@@ -4,14 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="may24.css">
-    <title>Document</title>
+    <title>Animation Practice</title>
 </head>
-    <body>
-        <div class="herobox">
-            <img src="https://images.squarespace-cdn.com/content/63d00bcc43aae3657868830b/1676313108979-MXACVYFI7T9QH4E1SF1R/Cover-Forest+%281x1%29.jpg?content-type=image%2Fjpeg" alt="">
-            <div class="birds">
-                <img src="flapping.webp" alt="bird image">
-            </div>
+<body>
+    <div class="herobox">
+        <img src="https://images.squarespace-cdn.com/content/63d00bcc43aae3657868830b/1676313108979-MXACVYFI7T9QH4E1SF1R/Cover-Forest+%281x1%29.jpg?content-type=image%2Fjpeg" alt="">
+        <div class="birds">
+            <img src="flapping.webp" alt="bird image">
         </div>
-    </body>
+        <a href="#kiwi">
+            <button id="openModal">Wings of Dawn</button>
+        </a>
+    </div>
+
+    <div class="mdl" id="kiwi">
+        <div>
+            <a href="#" id="closeModal">&#x2716;</a>
+
+            <h1>Wings of Dawn</h1>
+            
+            <p>Feathered friends take flight,<br>
+                Painting skies with pure delight,<br>
+                Nature's endless height.</p>
+            
+        </div>
+    </div>
+
+
+<script>
+    // Get the modal and close button elements
+    const modal = document.getElementById('kiwi');
+    const closeModal = document.getElementById('closeModal');
+    const openModalButton = document.getElementById('openModal');
+
+    // Function to show the modal
+    function showModal() {
+        modal.style.display = 'block';
+    }
+
+    // Function to hide the modal
+    function hideModal() {
+        modal.style.display = 'none';
+    }
+
+    // Event listener for opening the modal when the button is clicked
+    openModalButton.addEventListener('click', showModal);
+
+    // Event listener for closing the modal when the close button is clicked
+    closeModal.addEventListener('click', hideModal);
+
+    // Event listener to close the modal if the user clicks outside of it
+    window.addEventListener('click', function(event) {
+        if (event.target === modal) {
+            hideModal();
+        }
+    });
+</script>
+</body>
 </html>
