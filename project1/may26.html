@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solaris | Solar Solutions</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+
+
+  <nav class="navbar navbar-expand-lg bg-transparent  ">
+    <div class="container-fluid">
+      <a class="navbar-brand text-white" href="#">Solaris</a>
+
+
+      <button class="btn text-white pe-3 ms-auto" data-bs-target="#kiwi" data-bs-toggle="modal">Log In</button>
+      <div class="modal" id="kiwi">
+          <div class="modal-dialog">
+          <div class="modal-content px-4 py-4">
+
+
+<!-- Log In / Sign Up Navbar -->
+<div class="container-fluid">
+  <h1>Select an option</h1>
+  <ul class="nav nav-pills nav-fill gap-2 p-1 small bg-dark rounded-5 shadow-sm" id="pillNav2" role="tablist" style="--bs-nav-link-color: var(--bs-white); --bs-nav-pills-link-active-color: var(--bs-dark); --bs-nav-pills-link-active-bg: var(--bs-white);">
+      <li class="nav-item" role="presentation">
+          <button class="nav-link active rounded-5" id="logIn-tab2" data-bs-toggle="tab" data-bs-target="#logIn" type="button" role="tab" aria-controls="logIn" aria-selected="true">Log In</button>
+      </li>
+      <li class="nav-item" role="presentation">
+          <button class="nav-link rounded-5" id="signUp-tab2" data-bs-toggle="tab" data-bs-target="#signUp" type="button" role="tab" aria-controls="signUp" aria-selected="false">Sign Up</button>
+      </li>
+  </ul>
+
+  <!-- Tab Content -->
+  <div class="tab-content mt-3">
+      <!-- Log In Form -->
+      <div class="tab-pane fade show active" id="logIn" role="tabpanel" aria-labelledby="logIn-tab2">
+          <form id="login-form">
+              <div class="form-group">
+                  <label for="login-email">Email address</label>
+                  <input type="email" class="form-control" id="login-email" aria-describedby="emailHelp" placeholder="Email address" required>
+                  <small id="emailHelp" class="form-text text-light">We'll never share your email with anyone else.</small>
+              </div>
+              <div class="form-group">
+                  <label for="login-password">Password</label>
+                  <input type="password" class="form-control" id="login-password" placeholder="Password" required>
+              </div>
+              <div class="form-group form-check">
+                  <input type="checkbox" class="form-check-input" id="login-staySignedIn">
+                  <label class="form-check-label" for="login-staySignedIn">Stay signed in?</label>
+              </div>
+              <div class="d-grid gap-2 col-6 mx-auto">
+                  <button class="btn btn-dark" type="submit">Log In</button>
+                  <button class="btn btn-dark" data-bs-dismiss="modal" type="button">Close</button>
+              </div>
+          </form>
+      </div>
+
+      <!-- Sign Up Form -->
+      <div class="tab-pane fade" id="signUp" role="tabpanel" aria-labelledby="signUp-tab2">
+          <form id="signup-form">
+              <div class="form-group">
+                  <label for="signup-firstname">First Name</label>
+                  <input type="text" class="form-control" id="signup-firstname" placeholder="First name" required>
+              </div>
+              <div class="form-group">
+                  <label for="signup-lastname">Last Name</label>
+                  <input type="text" class="form-control" id="signup-lastname" placeholder="Last name" required>
+              </div>
+              <div class="form-group">
+                  <label for="signup-email">Email address</label>
+                  <input type="email" class="form-control" id="signup-email" aria-describedby="emailHelp" placeholder="Email address" required>
+                  <small id="emailHelp" class="form-text text-light">We'll never share your email with anyone else.</small>
+              </div>
+              <div class="form-group">
+                  <label for="signup-password">Password</label>
+                  <input type="password" class="form-control" id="signup-password" placeholder="Password" required>
+              </div>
+              <div class="d-grid gap-2 col-6 mx-auto">
+                  <button class="btn btn-dark" type="submit">Sign Up</button>
+                  <button class="btn btn-dark" data-bs-dismiss="modal" type="button">Close</button>
+              </div>
+          </form>
+      </div>
+  </div>
+</div>
+
+</div>
+</div>
+</div>
+
+
+      <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+          <li class="nav-item">
+            <a class="nav-link active text-white" aria-current="page" href="#ourProducts">Our Products</a>
+
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Shopping Cart (coming soon)</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              More
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">FAQ (coming soon)</a></li>
+              <li><a class="dropdown-item" href="#">Mission Statement (coming soon)</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Contact Us  (coming soon)</a></li>
+            </ul>
+          </li>
+
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-light" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <div class="herocontainer-wrapper">
+    <div class="herocontainer position-sticky bottom-0 start-0 mb-4 ms-4">
+      <h1 class="text-left mb-4 px-4">Harness the Sun.</h1>
+      <p class="text-left mb-4 px-4">Infinite Energy, Endless Possibilities. Solaris.</p>
+    </div>
+  </div>
+  
+  
+  
+
+  
+
+<div class="Container">
+<div id="gridContainer">
+  <h1 class="text-center" id="ourProducts">Solar Solutions</h1>
+  <div class="row text-center">
+<!-- Residential -->
+  <div class="col-xl-4 mb-3">
+    <div class="card border-0 h-100 bg-transparent"> 
+      <h2 class="text-light rounded mt-3">Residential</h2>
+      <img class="w-75 mx-auto" src="https://nrgcleanpower.com/wp-content/uploads/2021/10/post_home_solar_panels.jpg" alt="">
+      <button class="btn btn-dark mt-3 my-1 w-75 mb-3 mx-auto addToCart" data-bs-target="#apple1" data-bs-toggle="modal" data-product="Residential" data-price="10000">Learn More</button>
+      <div class="modal" id="apple1">
+      <!-- Modal content for Residential -->
+          <div class="modal-dialog">
+            <div class="modal-content bg-dark text-light btn-color-light py-2 ">
+              <h1>Residential Applications</h1>
+              <img class="w-50 mx-auto mb-3" src="https://media.architecturaldigest.com/photos/64c7bb7ef56f0faa02d217c6/16:9/w_2560%2Cc_limit/GettyImages-1384831593.jpg" alt="Placeholder Image">
+
+              <p class="w-75 mx-auto">Harnessing the sun's power for homes, residential solar applications offer a sustainable solution for reducing energy bills and carbon footprints. Homeowners can install solar panels on rooftops or in yards, generating clean, renewable energy to meet their electricity needs. Advances in solar technology have made residential systems more efficient and affordable, providing a reliable source of power and increasing property values.</p>
+              <p>$10,000</p>
+              <p>x</p>
+              <p>Enter Quantity:</p>
+              <input class="form-control w-50 mx-auto mb-2 quantity" type="number" min="1" value="1">
+              <div class="d-grid gap-2 col-6 mx-auto">
+                <button class="btn btn-dark" type="button">Add to cart</button>
+                <button class="btn btn-dark" data-bs-toggle="modal" type="button">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Commercial -->
+    <div class="col-sm-4 mb-3">
+      <div class="card border-0 h-100 bg-transparent"> 
+        <h2 class="text-light rounded mt-3">Commercial</h2>
+        <img class="w-75 mx-auto" src="https://www.verogy.com/wp-content/uploads/2020/10/Solar-Power-For-Office-Building-Owners-October-Blog-1.jpg" alt="">
+        <button class="btn btn-dark mt-3 my-1 w-75 mb-3 mx-auto addToCart" data-bs-target="#apple2" data-bs-toggle="modal" data-product="Commercial" data-price="100000">Learn More</button>
+        <div class="modal" id="apple2">
+          <!-- Modal content for Commercial -->
+          <div class="modal-dialog">
+            <div class="modal-content bg-dark text-light btn-color-light py-2 ">
+              <h1>Commercial Applications</h1>
+              <img class="w-50 mx-auto mb-3" src="https://smartasset.com/wp-content/uploads/sites/2/2023/08/two-engineers-installing-solar-panels-on-roof.jpg_s1024x1024wisk20cmskLiEze3fWKilJamAiSM5imZnX1MjhZ9V4q7TJTAVI.jpg" alt="Placeholder Image">
+
+              <p class="w-75 mx-auto">Commercial solar applications are transforming businesses by providing cost-effective, sustainable energy solutions. Companies can install solar panels on rooftops, parking structures, or open land to generate power for their operations. This not only reduces electricity costs but also enhances corporate sustainability initiatives. By investing in solar energy, businesses can demonstrate environmental responsibility, attract eco-conscious customers, and gain a competitive edge.</p>
+              <p>$100,000</p>
+              <p>x</p>
+              <p>Enter Quantity:</p>
+              <input class="form-control w-50 mx-auto mb-2 quantity" type="number" min="1" value="1">
+              <div class="d-grid gap-2 col-6 mx-auto">
+                <button class="btn btn-dark" type="button">Add to cart</button>
+                <button class="btn btn-dark mb-2" data-bs-toggle="modal" type="button">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Large-Scale -->
+    <div class="col-sm-4 mb-3">
+      <div class="card border-0 h-100 bg-transparent"> 
+        <h2 class="text-light rounded mt-3">Large-Scale</h2>
+        <img class="w-75 mx-auto" src="https://d3ozokkbblvuwo.cloudfront.net/wp-content/uploads/2023/10/largest-solar-farm.jpg" alt="">
+        <button class="btn btn-dark mt-3 my-1 w-75 mb-3 mx-auto addToCart" data-bs-target="#apple3" data-bs-toggle="modal" data-product="Large-Scale" data-price="1000000">Learn More</button>
+        <div class="modal" id="apple3">
+          <!-- Modal content for Large-Scale -->
+          <div class="modal-dialog">
+            <div class="modal-content bg-dark text-light btn-color-light py-2 ">
+              <h1>Large-Scale Applications</h1>
+              <img class="w-50 mx-auto mb-3" src="https://www.ysgsolar.com/sites/default/files/styles/sc_940x470_mc/public/blog/solar_farm_in_snowy_field_1.jpg?itok=JhIEzDtE" alt="Placeholder Image">
+
+              <p class="w-75 mx-auto">Large-scale solar applications, also known as solar farms or solar parks, involve deploying vast arrays of photovoltaic panels to generate substantial amounts of electricity. These installations can cover hundreds of acres and provide power to thousands of homes and businesses. Large-scale solar projects contribute significantly to the renewable energy grid, helping to reduce dependence on fossil fuels and lower greenhouse gas emissions on a regional or national level.</p>
+              <p>$1,000,000</p>
+              <p>x</p>
+              <p>Enter Quantity:</p>
+              <input class="form-control w-50 mx-auto mb-2 quantity" type="number" min="1" value="1">
+              <div class="d-grid gap-2 col-6 mx-auto">
+                <button class="btn btn-dark" type="button">Add to cart</button>
+                <button class="btn btn-dark mb-2" data-bs-toggle="modal" type="button">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Mobile -->
+    <div class="col-sm-4 mb-3">
+      <div class="card border-0 h-100 bg-transparent"> 
+        <h2 class="text-light rounded mt-3">Mobile</h2>
+        <img class="w-75 mx-auto" src="https://www.startupselfie.net/wp-content/uploads/2021/06/MOVEit-Mobile-Solar-Container.jpg" alt="">
+        <button class="btn btn-dark mt-3 my-1 w-75 mb-3 mx-auto addToCart" data-bs-target="#apple4" data-bs-toggle="modal" data-product="Mobile" data-price="8000">Learn More</button>
+        <div class="modal" id="apple4">
+          <!-- Modal content for Mobile -->
+          <div class="modal-dialog">
+            <div class="modal-content bg-dark text-light btn-color-light py-2 ">
+              <h1>Mobile Applications</h1>
+              <img class="w-50 mx-auto mb-3" src="https://www.jains.com/Solar/mounting_solutions/images/Mobile%20solar%20generator%20trailer.png" alt="Placeholder Image">
+
+              <p class="w-75 mx-auto">Mobile solar applications are designed to provide renewable energy on the go. These systems are ideal for recreational vehicles, boats, camping, and remote work sites. Portable solar panels and solar-powered chargers offer flexibility and convenience, ensuring access to clean energy wherever it’s needed. Mobile solar solutions are perfect for adventurers and professionals who require reliable, off-grid power.</p>
+              <p>$8,000</p>
+              <p>x</p>
+              <p>Enter Quantity:</p>
+              <input class="form-control w-50 mx-auto mb-2 quantity" type="number" min="1" value="1">
+              <div class="d-grid gap-2 col-6 mx-auto">
+                <button class="btn btn-dark" type="button">Add to cart</button>
+                <button class="btn btn-dark mb-2" data-bs-toggle="modal" type="button">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Orbital -->
+    <div class="col-sm-4 mb-3">
+      <div class="card border-0 h-100 bg-transparent"> 
+        <h2 class="text-light rounded mt-3">Orbital</h2>
+        <img class="w-75 mx-auto" src="https://s3.amazonaws.com/solarassets/wp-content/uploads/2019/06/ISS20solar20panels.jpg" alt="">
+        <button class="btn btn-dark mt-3 my-1 w-75 mb-3 mx-auto addToCart" data-bs-target="#apple5" data-bs-toggle="modal" data-product="Orbital" data-price="5500000">Learn More</button>
+        <div class="modal" id="apple5">
+          <!-- Modal content for Orbital -->
+          <div class="modal-dialog">
+            <div class="modal-content bg-dark text-light btn-color-light py-2 ">
+              <h1>Orbital Applications</h1>
+              <img class="w-50 mx-auto mb-3" src="https://im.indiatimes.in/content/2022/Jun/istockphoto-155439194-612x612_62a05feeb1666.jpg?w=414&h=276&cc=1" alt="Placeholder Image">
+
+              <p class="w-75 mx-auto">Orbital solar applications involve harnessing solar energy in space. Solar panels are deployed on satellites, space stations, and potentially future space habitats to generate power where traditional energy sources are unavailable. These high-efficiency solar systems are crucial for sustaining long-term space missions, powering scientific instruments, and ensuring the functionality of communication satellites.</p>
+              <p>$5,500,000</p>
+              <p>x</p>
+              <p>Enter Quantity:</p>
+              <input class="form-control w-50 mx-auto mb-2 quantity" type="number" min="1" value="1">
+              <div class="d-grid gap-2 col-6 mx-auto">
+                <button class="btn btn-dark" type="button">Add to cart</button>
+                <button class="btn btn-dark mb-2" data-bs-toggle="modal" type="button">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Maritime -->
+    <div class="col-sm-4 mb-3">
+      <div class="card border-0 h-100 bg-transparent"> 
+        <h2 class="text-light rounded mt-3">Maritime</h2>
+        <img class="w-75 mx-auto" src="https://media.licdn.com/dms/image/C4E12AQHuQzE3ls0GKA/article-cover_image-shrink_600_2000/0/1612718633225?e=2147483647&v=beta&t=ip_fFsEydt6vnZA0zDQiuDOqHacXsBAM1gRAc8N-kY8" alt="">
+        <button class="btn btn-dark mt-3 my-1 w-75 mb-3 mx-auto addToCart" data-bs-target="#apple6" data-bs-toggle="modal" data-product="Maritime" data-price="1500000">Learn More</button>
+        <div class="modal" id="apple6">
+          <!-- Modal content for Maritime -->
+          <div class="modal-dialog">
+            <div class="modal-content bg-dark text-light btn-color-light py-2 ">
+              <h1>Maritime Applications</h1>
+              <img class="w-50 mx-auto mb-3" src="https://www.en-former.com/wp-content/uploads/2022/08/RWE-enformer-Bildergalerie-floating-solar-Header-gr-1340x564.jpg.webp" alt="Placeholder Image">
+
+              <p class="w-75 mx-auto">Maritime solar applications provide sustainable energy solutions for boats, ships, and offshore platforms. Solar panels installed on maritime vessels can power onboard systems, reduce fuel consumption, and lower emissions. This technology is essential for both recreational and commercial maritime operations, offering a clean energy alternative that enhances efficiency and promotes environmental stewardship in marine environments.</p>
+              <p>$1,500,000</p>
+              <p>x</p>
+              <p>Enter Quantity:</p>
+              <input class="form-control w-50 mx-auto mb-2 quantity" type="number" min="1" value="1">
+              <div class="d-grid gap-2 col-6 mx-auto">
+                <button class="btn btn-dark" type="button">Add to cart</button>
+                <button class="btn btn-dark mb-2" data-bs-toggle="modal" type="button">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="script.js">
+        
+    </script>
+</body>
+</html>
