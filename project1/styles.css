@@ -8,6 +8,7 @@ body {
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
+    overflow-x: hidden;
 }
 
   .custom-toggler {
@@ -61,3 +62,13 @@ body {
 #gridContainer {
     margin-top: 100vh;
 }
+
+#bananas {
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+#peach {
+    border-top: 1px solid rgb(255, 255, 255);
+};
+
+
