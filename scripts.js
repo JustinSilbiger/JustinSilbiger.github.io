@@ -8,13 +8,13 @@ const projects = [
   },
   {
     title: "Patient Service API",
-    description: "An API service to manage patient data and interactions.",
+    description: "A FastAPI service to manage patient data and interactions.",
     link: "https://github.com/JustinSilbiger/Patient-Service-API",
     created: "2021-11-10",
   },
   {
     title: "Patient Service UI",
-    description: "Front-end UI for the Patient Service API.",
+    description: "A React front-end UI for the Patient Service API.",
     link: "https://github.com/JustinSilbiger/PATIENT_SERVICE_UI",
     created: "2022-03-05",
   },
@@ -40,7 +40,8 @@ const projects = [
   },
   {
     title: "JTimes.org",
-    description: "A website to share Shabbat traditions and resources.",
+    description:
+      "A reference website that uses the Hebcal API to fetch Sabbath times using JavaScript Geolocation.",
     link: "https://github.com/JustinSilbiger/shabbat-shalom.github.io",
     created: "2022-05-15",
   },
@@ -52,7 +53,8 @@ const projects = [
   },
   {
     title: "Sigma Mary AI",
-    description: "An AI project focused on natural language processing.",
+    description:
+      "An AI text summarizer that uses Meta's BART model trained on CNN & Daily Mail news articles.",
     link: "https://github.com/JustinSilbiger/Sigma-Mary-AI",
     created: "2022-10-20",
   },
