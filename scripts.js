@@ -2,12 +2,24 @@ const projects = [
   {
     title: "Silbiger Family Tree",
     description:
-      "The Silbiger Family Tree is a web application designed to document the genealogy of the Silbiger family.",
+      "The Silbiger Family Tree is a Node.js web application designed to document the genealogy of the Silbiger family.",
     link: "https://github.com/JustinSilbiger/silbiger",
     created: "2021-04-10",
   },
   {
-    title: "To Do Django",
+    title: "Patient Service API",
+    description: "An API service to manage patient data and interactions.",
+    link: "https://github.com/JustinSilbiger/Patient-Service-API",
+    created: "2021-11-10",
+  },
+  {
+    title: "Patient Service UI",
+    description: "Front-end UI for the Patient Service API.",
+    link: "https://github.com/JustinSilbiger/PATIENT_SERVICE_UI",
+    created: "2022-03-05",
+  },
+  {
+    title: "To-Do Django",
     description: "A simple to-do application built with Django.",
     link: "https://github.com/JustinSilbiger/To_Do_Django",
     created: "2021-06-15",
@@ -20,26 +32,14 @@ const projects = [
     created: "2021-08-01",
   },
   {
-    title: "Patient Service API",
-    description: "An API service to manage patient data and interactions.",
-    link: "https://github.com/JustinSilbiger/Patient-Service-API",
-    created: "2021-11-10",
-  },
-  {
-    title: "Department of Automotive Vehicle",
+    title: "Department of Automotive Vehicles",
     description:
       "A simple React project that uses JavaScript to determine if a person is old enough to apply for their driver's test.",
     link: "https://github.com/JustinSilbiger/DofAV",
     created: "2022-01-20",
   },
   {
-    title: "Patient Service UI",
-    description: "Front-end UI for the Patient Service API.",
-    link: "https://github.com/JustinSilbiger/PATIENT_SERVICE_UI",
-    created: "2022-03-05",
-  },
-  {
-    title: "Shabbat Shalom",
+    title: "JTimes.org",
     description: "A website to share Shabbat traditions and resources.",
     link: "https://github.com/JustinSilbiger/shabbat-shalom.github.io",
     created: "2022-05-15",
@@ -64,7 +64,7 @@ function populateProjects() {
     .sort((a, b) => new Date(a.created) - new Date(b.created))
     .forEach((project) => {
       const projectCard = document.createElement("div");
-      projectCard.className = "col-md-4";
+      projectCard.className = "col-md-4 d-flex p-2";
       projectCard.innerHTML = `
           <div class="card project-card" data-aos="fade-up">
               <div class="card-body">
@@ -116,9 +116,9 @@ document.addEventListener("DOMContentLoaded", () => {
       document.body.classList.add("light-mode");
       localStorage.setItem("theme", "light");
     }
+    updateButtonColors();
   });
 
-  // Scroll to Top Button
   window.onscroll = function () {
     if (
       document.body.scrollTop > 20 ||
@@ -135,6 +135,24 @@ document.addEventListener("DOMContentLoaded", () => {
     document.documentElement.scrollTop = 0;
   });
 
-  // Initialize AOS (Animate On Scroll)
   AOS.init();
+  updateButtonColors();
 });
+
+function updateButtonColors() {
+  const isDarkMode = document.body.classList.contains("dark-mode");
+  const primaryButtons = document.querySelectorAll(".btn-primary");
+  const secondaryButtons = document.querySelectorAll(".btn-secondary");
+
+  primaryButtons.forEach((btn) => {
+    btn.style.backgroundColor = isDarkMode ? "#ffffff" : "#000000";
+    btn.style.borderColor = isDarkMode ? "#ffffff" : "#000000";
+    btn.style.color = isDarkMode ? "#000000" : "#ffffff";
+  });
+
+  secondaryButtons.forEach((btn) => {
+    btn.style.backgroundColor = isDarkMode ? "#ffffff" : "#000000";
+    btn.style.borderColor = isDarkMode ? "#ffffff" : "#000000";
+    btn.style.color = isDarkMode ? "#000000" : "#ffffff";
+  });
+}
