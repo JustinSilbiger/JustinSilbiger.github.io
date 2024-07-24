@@ -2,7 +2,7 @@ const projects = [
   {
     title: "Tasky",
     description:
-      "Tasky is your go-to app for managing daily tasks and staying productive. With a user-friendly design and reliable performance, Tasky helps you track and complete your to-dos effortlessly, wherever you are.",
+      "Tasky is a full-stack web application I developed to streamline task management. It features a React.js frontend hosted on AWS S3 and a Django backend deployed on AWS EC2, utilizing SQLite for data storage. The application employs RESTful APIs for seamless frontend-backend communication and supports full CRUD operations for managing tasks.",
     link: "http://taskyfe.s3-website-us-east-1.amazonaws.com/login",
   },
   {
