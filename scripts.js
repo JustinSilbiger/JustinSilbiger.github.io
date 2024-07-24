@@ -14,7 +14,7 @@ const projects = [
   {
     title: "Patient Service API",
     description:
-      "The Patient Service API is a robust Python-based RESTful API designed to manage patient details within a hospital management system. Built with FastAPI, it offers endpoints for creating, reading, updating, and deleting patient records, ensuring secure and efficient data handling. As part of a boot camp project I helped contribute to, this API showcases the use of modern frameworks to provide reliable and scalable healthcare data management solutions.",
+      "The Patient Service API is a robust Python-based RESTful API designed to manage patient details within a hospital management system. Built with FastAPI, it offers endpoints for creating, reading, updating, and deleting patient records, ensuring secure and efficient data handling. As part of a boot camp project I contributed to, this API showcases the use of modern frameworks to provide reliable and scalable healthcare data management solutions.",
     link: "https://github.com/JustinSilbiger/Patient-Service-API",
   },
   {
