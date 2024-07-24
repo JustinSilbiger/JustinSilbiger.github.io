@@ -1,5 +1,12 @@
 const projects = [
   {
+    title: "Tasky",
+    description:
+      "Tasky is your go-to app for managing daily tasks and staying productive. With a user-friendly design and reliable performance, Tasky helps you track and complete your to-dos effortlessly, wherever you are.",
+    link: "http://taskyfe.s3-website-us-east-1.amazonaws.com/login",
+    created: "2024-07-01",
+  },
+  {
     title: "Silbiger Family Tree",
     description:
       "The Silbiger Family Tree is a Node.js web application designed to document the genealogy of the Silbiger family.",
