@@ -4,73 +4,63 @@ const projects = [
     description:
       "Tasky is your go-to app for managing daily tasks and staying productive. With a user-friendly design and reliable performance, Tasky helps you track and complete your to-dos effortlessly, wherever you are.",
     link: "http://taskyfe.s3-website-us-east-1.amazonaws.com/login",
-    created: "2024-07-01",
   },
   {
     title: "Silbiger Family Tree",
     description:
       "The Silbiger Family Tree is a Node.js web application designed to document the genealogy of the Silbiger family.",
     link: "https://github.com/JustinSilbiger/silbiger",
-    created: "2021-04-10",
   },
   {
     title: "Patient Service API",
     description: "A FastAPI service to manage patient data and interactions.",
     link: "https://github.com/JustinSilbiger/Patient-Service-API",
-    created: "2021-11-10",
   },
   {
     title: "Patient Service UI",
     description: "A React front-end UI for the Patient Service API.",
     link: "https://github.com/JustinSilbiger/PATIENT_SERVICE_UI",
-    created: "2022-03-05",
   },
   {
     title: "To-Do Django",
     description: "A simple to-do application built with Django.",
     link: "https://github.com/JustinSilbiger/To_Do_Django",
-    created: "2021-06-15",
   },
   {
     title: "Recipe Book",
     description:
       "A Flask application to manage and share your favorite recipes.",
     link: "https://github.com/JustinSilbiger/recipe_book",
-    created: "2021-08-01",
   },
   {
     title: "Department of Automotive Vehicles",
     description:
       "A simple React project that uses JavaScript to determine if a person is old enough to apply for their driver's test.",
     link: "https://github.com/JustinSilbiger/DofAV",
-    created: "2022-01-20",
   },
   {
     title: "JTimes.org",
     description:
       "A reference website that uses the Hebcal API to fetch Sabbath times using JavaScript Geolocation.",
     link: "https://github.com/JustinSilbiger/shabbat-shalom.github.io",
-    created: "2022-05-15",
   },
   {
     title: "YouTube Clone",
     description: "A clone of the YouTube platform with basic features.",
     link: "https://github.com/JustinSilbiger/youtube_clone",
-    created: "2022-07-30",
   },
   {
     title: "Sigma Mary AI",
     description:
       "An AI text summarizer that uses Meta's BART model trained on CNN & Daily Mail news articles.",
     link: "https://github.com/JustinSilbiger/Sigma-Mary-AI",
-    created: "2022-10-20",
   },
 ];
 
 function populateProjects() {
   const projectsContainer = document.getElementById("projects-container");
   projects
-    .sort((a, b) => new Date(a.created) - new Date(b.created))
+    .sort(() => Math.random() - 0.5)
     .forEach((project) => {
       const projectCard = document.createElement("div");
       projectCard.className = "col-md-4 d-flex p-2";
