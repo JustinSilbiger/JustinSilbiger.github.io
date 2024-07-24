@@ -41,7 +41,7 @@ const projects = [
   {
     title: "JTimes.org",
     description:
-      "This reference website utilizes the Hebcal API to fetch and display Sabbath times, leveraging JavaScript Geolocation for user-specific information. Built with vanilla HTML, CSS, and JavaScript, it showcases efficient web development practices. String concatenation is employed to dynamically construct and present messages, combining static text with fetched data for real-time, personalized content.",
+      "This reference website utilizes the Hebcal API to fetch and display Sabbath times, leveraging JavaScript Geolocation for user-specific information. String concatenation is employed to dynamically construct and present messages, combining static text with fetched data for real-time, personalized content.",
     link: "https://github.com/JustinSilbiger/shabbat-shalom.github.io",
   },
   {
