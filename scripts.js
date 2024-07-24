@@ -8,7 +8,7 @@ const projects = [
   {
     title: "Silbiger Family Tree",
     description:
-      "The Silbiger Family Tree is a Node.js web application designed to document the genealogy of the Silbiger family.",
+      "The Silbiger Family Tree is a Node.js web application designed to document the genealogy of the Silbiger family. It uses PostgreSQL for the database and Node.js for both the frontend and backend. The application is styled with Bootstrap, providing a clean and responsive design. It supports full CRUD operations, allowing users to create, read, update, and delete family records efficiently. JWT (JSON Web Tokens) is used for secure authentication and authorization, with administrator login granting permissions for operation management.",
     link: "https://github.com/JustinSilbiger/silbiger",
   },
   {
@@ -41,7 +41,7 @@ const projects = [
   {
     title: "JTimes.org",
     description:
-      "A reference website that uses the Hebcal API to fetch Sabbath times using JavaScript Geolocation.",
+      "This reference website utilizes the Hebcal API to fetch and display Sabbath times, leveraging JavaScript Geolocation for user-specific information. Built with vanilla HTML, CSS, and JavaScript, it showcases efficient web development practices. String concatenation is employed to dynamically construct and present messages, combining static text with fetched data for real-time, personalized content.",
     link: "https://github.com/JustinSilbiger/shabbat-shalom.github.io",
   },
   {
@@ -52,7 +52,7 @@ const projects = [
   {
     title: "Sigma Mary AI",
     description:
-      "An AI text summarizer that uses Meta's BART model trained on CNN & Daily Mail news articles.",
+      "Sigma-Mary-AI is an AI text summarizer built using Meta's BART model, trained on CNN and Daily Mail news articles. Developed as a project from Postman Academy, it effectively condenses lengthy texts into concise summaries. By leveraging advanced natural language processing, Sigma-Mary-AI demonstrates the practical use of AI in text summarization.",
     link: "https://github.com/JustinSilbiger/Sigma-Mary-AI",
   },
 ];
