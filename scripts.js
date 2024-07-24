@@ -13,7 +13,8 @@ const projects = [
   },
   {
     title: "Patient Service API",
-    description: "A FastAPI service to manage patient data and interactions.",
+    description:
+      "The Patient Service API is a robust Python-based RESTful API designed to manage patient details within a hospital management system. Built with FastAPI, it offers endpoints for creating, reading, updating, and deleting patient records, ensuring secure and efficient data handling. As part of a boot camp project I helped contribute to, this API showcases the use of modern frameworks to provide reliable and scalable healthcare data management solutions.",
     link: "https://github.com/JustinSilbiger/Patient-Service-API",
   },
   {
@@ -33,21 +34,10 @@ const projects = [
     link: "https://github.com/JustinSilbiger/recipe_book",
   },
   {
-    title: "Department of Automotive Vehicles",
-    description:
-      "A simple React project that uses JavaScript to determine if a person is old enough to apply for their driver's test.",
-    link: "https://github.com/JustinSilbiger/DofAV",
-  },
-  {
     title: "JTimes.org",
     description:
-      "This reference website utilizes the Hebcal API to fetch and display Sabbath times, leveraging JavaScript Geolocation for user-specific information. String concatenation is employed to dynamically construct and present messages, combining static text with fetched data for real-time, personalized content.",
+      "This reference website utilizes the Hebcal API to fetch and display Sabbath times, leveraging JavaScript Geolocation for user-specific information. String concatenation is employed to dynamically construct and present location-based information, combining static text with fetched data for personalized content.",
     link: "https://github.com/JustinSilbiger/shabbat-shalom.github.io",
-  },
-  {
-    title: "YouTube Clone",
-    description: "A clone of the YouTube platform with basic features.",
-    link: "https://github.com/JustinSilbiger/youtube_clone",
   },
   {
     title: "Sigma Mary AI",
