@@ -24,13 +24,12 @@ const projects = [
     description: "A React front-end UI for the Patient Service API.",
     link: "https://github.com/JustinSilbiger/PATIENT_SERVICE_UI",
   },
-  // {
-  //   title: "Recipe Book",
-  //   description:
-  //     "A Flask application to manage and share your favorite recipes.",
-  //   link: "https://github.com/JustinSilbiger/recipe_book",
-  //   image: "assets/images/recipe-book.png", // Example image path
-  // },
+  {
+    title: "Recipe Book",
+    description:
+      "A Flask application to manage and share your favorite recipes.",
+    link: "https://github.com/JustinSilbiger/recipe_book",
+  },
   {
     title: "JTimes.org",
     description:
