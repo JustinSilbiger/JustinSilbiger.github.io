@@ -4,12 +4,14 @@ const projects = [
     description:
       "Tasky is a full-stack web application I developed to streamline task management. It features a React.js frontend hosted on AWS S3 and a Django backend deployed on AWS EC2, utilizing SQLite for data storage. The application employs RESTful APIs for seamless frontend-backend communication and supports full CRUD operations for managing tasks.",
     link: "http://taskyfe.s3-website-us-east-1.amazonaws.com/login",
+    image: "assets/tasky.png", // Example image path
   },
   {
     title: "Silbiger Family Tree",
     description:
       "The Silbiger Family Tree is a Node.js web application designed to document the genealogy of the Silbiger family. It uses PostgreSQL for the database and Node.js for both the frontend and backend. The application is styled with Bootstrap, providing a clean and responsive design. It supports full CRUD operations, allowing users to create, read, update, and delete family records efficiently. JWT (JSON Web Tokens) is used for secure authentication and authorization, with administrator login granting permissions for operation management.",
     link: "https://github.com/JustinSilbiger/silbiger",
+    image: "assets/Family.png", // Example image path
   },
   {
     title: "Patient Service API",
@@ -22,28 +24,26 @@ const projects = [
     description: "A React front-end UI for the Patient Service API.",
     link: "https://github.com/JustinSilbiger/PATIENT_SERVICE_UI",
   },
-  {
-    title: "To-Do Django",
-    description: "A simple to-do application built with Django.",
-    link: "https://github.com/JustinSilbiger/To_Do_Django",
-  },
-  {
-    title: "Recipe Book",
-    description:
-      "A Flask application to manage and share your favorite recipes.",
-    link: "https://github.com/JustinSilbiger/recipe_book",
-  },
+  // {
+  //   title: "Recipe Book",
+  //   description:
+  //     "A Flask application to manage and share your favorite recipes.",
+  //   link: "https://github.com/JustinSilbiger/recipe_book",
+  //   image: "assets/images/recipe-book.png", // Example image path
+  // },
   {
     title: "JTimes.org",
     description:
       "This reference website utilizes the Hebcal API to fetch and display Sabbath times, leveraging JavaScript Geolocation for user-specific information. String concatenation is employed to dynamically construct and present location-based information, combining static text with fetched data for personalized content.",
     link: "https://github.com/JustinSilbiger/shabbat-shalom.github.io",
+    image: "assets/jtimes.png", // Example image path
   },
   {
     title: "Sigma Mary AI",
     description:
       "Sigma-Mary-AI is an AI text summarizer built using Meta's BART model, trained on CNN and Daily Mail news articles. Developed as a project from Postman Academy, it effectively condenses lengthy texts into concise summaries. By leveraging advanced natural language processing, Sigma-Mary-AI demonstrates the practical use of AI in text summarization.",
     link: "https://github.com/JustinSilbiger/Sigma-Mary-AI",
+    image: "assets/Sigma-Mary-AI.png", // Example image path
   },
 ];
 
@@ -55,13 +55,20 @@ function populateProjects() {
       const projectCard = document.createElement("div");
       projectCard.className = "col-md-4 d-flex p-2";
       projectCard.innerHTML = `
-          <div class="card project-card" data-aos="fade-up">
-              <div class="card-body">
-                  <h5 class="card-title">${project.title}</h5>
-                  <p class="card-text">${project.description}</p>
-                  <a href="${project.link}" class="btn btn-primary" target="_blank">Learn More</a>
-              </div>
+        <div class="card project-card" data-aos="fade-up">
+          <div class="card-body">
+            <h5 class="card-title">${project.title}</h5>
+            ${
+              project.image
+                ? `<img src="${project.image}" class="card-img-top p-2 mb-3" alt="${project.title} image">`
+                : ""
+            }
+            <p class="card-text">${project.description}</p>
+            <a href="${
+              project.link
+            }" class="btn btn-primary" target="_blank">Learn More</a>
           </div>
+        </div>
       `;
       projectsContainer.appendChild(projectCard);
     });
