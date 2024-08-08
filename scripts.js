@@ -4,7 +4,7 @@ const projects = [
     description:
       "Tasky is a full-stack web application I developed to streamline task management. It features a React.js frontend hosted on AWS S3 and a Django backend deployed on AWS EC2, utilizing SQLite for data storage. The application employs RESTful APIs for seamless frontend-backend communication and supports full CRUD operations for managing tasks.",
     link: "http://taskyfe.s3-website-us-east-1.amazonaws.com/login",
-    image: "assets/tasky.png", // Example image path
+    image: "assets/Tasky.png", // Example image path
   },
   {
     title: "Silbiger Family Tree",
@@ -35,7 +35,7 @@ const projects = [
     description:
       "This reference website utilizes the Hebcal API to fetch and display Sabbath times, leveraging JavaScript Geolocation for user-specific information. String concatenation is employed to dynamically construct and present location-based information, combining static text with fetched data for personalized content.",
     link: "https://github.com/JustinSilbiger/shabbat-shalom.github.io",
-    image: "assets/jtimes.png", // Example image path
+    image: "assets/Jtimes.png", // Example image path
   },
   {
     title: "Sigma Mary AI",
