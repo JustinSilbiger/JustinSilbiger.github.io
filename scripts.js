@@ -2,14 +2,14 @@ const projects = [
   {
     title: "Tasky",
     description:
-      "Tasky is a full-stack web application I developed to streamline task management. It features a React.js frontend hosted on AWS S3 and a Django backend deployed on AWS EC2, utilizing SQLite for data storage. The application employs RESTful APIs for seamless frontend-backend communication and supports full CRUD operations for managing tasks.",
+      "Tasky is a modern, full-stack web application designed to simplify task management. The project showcases a React.js frontend hosted on AWS S3, seamlessly integrated with a Django backend on AWS EC2, and utilizes SQLite for efficient data management. By employing a RESTful architecture, Tasky ensures smooth interaction between the frontend and backend, enabling robust CRUD operations for comprehensive task tracking. This project highlights my ability to deliver scalable, cloud-based solutions with a focus on user experience and backend reliability.",
     link: "http://taskyfe.s3-website-us-east-1.amazonaws.com/login",
     image: "assets/Tasky.png",
   },
   {
     title: "Silbiger Family Tree",
     description:
-      "The Silbiger Family Tree is a Node.js web application designed to document the genealogy of the Silbiger family. It uses PostgreSQL for the database and Node.js for both the frontend and backend. The application is styled with Bootstrap, providing a clean and responsive design. It supports full CRUD operations, allowing users to create, read, update, and delete family records efficiently. JWT (JSON Web Tokens) is used for secure authentication and authorization, with administrator login granting permissions for operation management.",
+      "The Silbiger Family Tree is a Node.js web application designed to document the genealogy of the Silbiger family. It uses PostgreSQL for the database and Node.js for both the frontend and backend. The application is styled with Bootstrap, providing a clean and responsive design. It supports full CRUD operations, allowing users to create, read, update, and delete family records efficiently. JWT (JSON Web Tokens) is used for secure authentication and authorization.",
     link: "https://github.com/JustinSilbiger/silbiger",
     image: "assets/Family.png",
   },
@@ -25,23 +25,23 @@ const projects = [
   //   description: "A React front-end UI for the Patient Service API.",
   //   link: "https://github.com/JustinSilbiger/PATIENT_SERVICE_UI",
   // },
-  {
-    title: "Recipe Book",
-    description:
-      "A Flask application to manage and share your favorite recipes.",
-    link: "https://github.com/JustinSilbiger/recipe_book",
-  },
+  // {
+  //   title: "Recipe Book",
+  //   description:
+  //     "A Flask application to manage and share your favorite recipes.",
+  //   link: "https://github.com/JustinSilbiger/recipe_book",
+  // },
   {
     title: "JTimes.org",
     description:
-      "This reference website utilizes the Hebcal API to fetch and display Sabbath times, leveraging JavaScript Geolocation for user-specific information. String concatenation is employed to dynamically construct and present location-based information, combining static text with fetched data for personalized content.",
+      "This reference website utilizes the Hebcal API to retrieve and display Sabbath times, incorporating JavaScript Geolocation for location-specific data. By combining static text with dynamic content through string interpolation, the site delivers personalized information such as Sabbath start and end times based on the user's location.",
     link: "https://github.com/JustinSilbiger/shabbat-shalom.github.io",
     image: "assets/Jtimes.png",
   },
   {
     title: "Sigma Mary AI",
     description:
-      "Sigma-Mary-AI is an AI text summarizer built using Meta's BART model, trained on CNN and Daily Mail news articles. Developed as a project from Postman Academy, it effectively condenses lengthy texts into concise summaries. By leveraging advanced natural language processing, Sigma-Mary-AI demonstrates the practical use of AI in text summarization.",
+      "Sigma-Mary-AI is an AI text summarizer I developed using Meta's BART model, which was trained on CNN and Daily Mail news articles. This application efficiently condenses lengthy texts into concise summaries by leveraging advanced natural language processing techniques. Sigma-Mary-AI showcases the practical application of AI in text summarization. This application was developed as part of the Postman Academy program.",
     link: "https://github.com/JustinSilbiger/Sigma-Mary-AI",
     image: "assets/Sigma-Mary-AI.png",
   },
