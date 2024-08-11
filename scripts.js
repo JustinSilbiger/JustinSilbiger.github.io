@@ -4,26 +4,27 @@ const projects = [
     description:
       "Tasky is a full-stack web application I developed to streamline task management. It features a React.js frontend hosted on AWS S3 and a Django backend deployed on AWS EC2, utilizing SQLite for data storage. The application employs RESTful APIs for seamless frontend-backend communication and supports full CRUD operations for managing tasks.",
     link: "http://taskyfe.s3-website-us-east-1.amazonaws.com/login",
-    image: "assets/Tasky.png", // Example image path
+    image: "assets/Tasky.png",
   },
   {
     title: "Silbiger Family Tree",
     description:
       "The Silbiger Family Tree is a Node.js web application designed to document the genealogy of the Silbiger family. It uses PostgreSQL for the database and Node.js for both the frontend and backend. The application is styled with Bootstrap, providing a clean and responsive design. It supports full CRUD operations, allowing users to create, read, update, and delete family records efficiently. JWT (JSON Web Tokens) is used for secure authentication and authorization, with administrator login granting permissions for operation management.",
     link: "https://github.com/JustinSilbiger/silbiger",
-    image: "assets/Family.png", // Example image path
+    image: "assets/Family.png",
   },
   {
     title: "Patient Service API",
     description:
-      "The Patient Service API is a robust Python-based RESTful API designed to manage patient details within a hospital management system. Built with FastAPI, it offers endpoints for creating, reading, updating, and deleting patient records, ensuring secure and efficient data handling. As part of a boot camp project I contributed to, this API showcases the use of modern frameworks to provide reliable and scalable healthcare data management solutions.",
+      "As part of a group boot camp project, I contributed to the Patient Service API by designing and integrating new database models that establish connections between Physician and Employee entities. My contributions included developing and optimizing CRUD operations for managing employee data and introducing new API endpoints for seamless data retrieval. These enhancements strengthened the backend architecture and ensured the system's scalability, setting a solid foundation for future growth. This boot camp group project was an excellent learning experience in building and managing complex backend systems with a focus on robust, scalable infrastructure.",
     link: "https://github.com/JustinSilbiger/Patient-Service-API",
+    image: "assets/Patient.png",
   },
-  {
-    title: "Patient Service UI",
-    description: "A React front-end UI for the Patient Service API.",
-    link: "https://github.com/JustinSilbiger/PATIENT_SERVICE_UI",
-  },
+  // {
+  //   title: "Patient Service UI",
+  //   description: "A React front-end UI for the Patient Service API.",
+  //   link: "https://github.com/JustinSilbiger/PATIENT_SERVICE_UI",
+  // },
   {
     title: "Recipe Book",
     description:
@@ -35,14 +36,14 @@ const projects = [
     description:
       "This reference website utilizes the Hebcal API to fetch and display Sabbath times, leveraging JavaScript Geolocation for user-specific information. String concatenation is employed to dynamically construct and present location-based information, combining static text with fetched data for personalized content.",
     link: "https://github.com/JustinSilbiger/shabbat-shalom.github.io",
-    image: "assets/Jtimes.png", // Example image path
+    image: "assets/Jtimes.png",
   },
   {
     title: "Sigma Mary AI",
     description:
       "Sigma-Mary-AI is an AI text summarizer built using Meta's BART model, trained on CNN and Daily Mail news articles. Developed as a project from Postman Academy, it effectively condenses lengthy texts into concise summaries. By leveraging advanced natural language processing, Sigma-Mary-AI demonstrates the practical use of AI in text summarization.",
     link: "https://github.com/JustinSilbiger/Sigma-Mary-AI",
-    image: "assets/Sigma-Mary-AI.png", // Example image path
+    image: "assets/Sigma-Mary-AI.png",
   },
 ];
 
