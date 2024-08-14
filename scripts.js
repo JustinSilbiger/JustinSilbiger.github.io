@@ -60,7 +60,7 @@ function populateProjects() {
             <h5 class="card-title">${project.title}</h5>
             ${
               project.image
-                ? `<img src="${project.image}" class="card-img-top p-2 mb-3" alt="${project.title} image">`
+                ? `<img src="${project.image}" class="card-img-top p-2 mb-3" style="border-radius: 15px; alt="${project.title} image" >`
                 : ""
             }
             <p class="card-text">${project.description}</p>
