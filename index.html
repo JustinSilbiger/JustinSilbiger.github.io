@@ -14,6 +14,29 @@
         .modal-backdrop.show {
             opacity: 0.7;
         }
+
+        /* Add these modal-specific theme styles */
+        body.dark-mode .modal-content {
+            background-color: #1f1f1f;
+            color: #ffffff;
+        }
+
+        body.dark-mode .modal-header {
+            border-bottom-color: #333;
+        }
+
+        body.dark-mode .btn-close {
+            filter: invert(1) grayscale(100%) brightness(200%);
+        }
+
+        body.light-mode .modal-content {
+            background-color: #ffffff;
+            color: #000000;
+        }
+
+        body.light-mode .modal-header {
+            border-bottom-color: #dee2e6;
+        }
     </style>
 </head>
 <!-- Google tag (gtag.js) -->
